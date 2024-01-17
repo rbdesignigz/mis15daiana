@@ -1,0 +1,1030 @@
+/* Generales */
+
+:root {
+    --color-1: #6d55b2;
+    /* --color-2: #FCF6F2; */
+    --color-2: #0f0b0e;
+    --color-3: #575756;
+    /* --color-4: rgb(234, 177, 240); */
+    --color-4: #0f0b0e;
+    --color-5: #e9d2e5;
+  }  
+  /* Scroll */
+  
+  ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background:var(--color-4);  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background:var(--color-1);  
+  }
+  
+  .custom-control-label::before {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .custom-control-label::after{
+    height: 20px;
+    width: 20px;
+  }
+  
+  .custom-control-input:checked ~ .custom-control-label::before {
+    color: var(--color-1);
+    border-color: var(--color-1);
+    background-color: var(--color-1);
+    outline: none;
+  }
+  .custom-control-input:focus ~ .custom-control-label::before {
+      box-shadow:none !important;
+  }
+  
+  .fancybox-bg{
+    background-color: var(--color-1) !important;
+  }
+  
+  .boton{
+    background:var(--color-1);
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-size: 15px;
+  
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.40);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.40);
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.40);
+    
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+  }
+  
+  .boton:hover{
+    background:var(--color-1);
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .title{
+    width: 100%;
+    display: inline-block;
+    font-family: 'DM Serif Display', serif;
+    color: #BFA881;
+    font-size: 45px;
+  }
+
+  .titlefiesta{
+    color: white;
+  }
+
+  .subtitle{
+    width: 100%;
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    color: #BFA881;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .subtitlefiesta{
+    color: white;
+  }
+  
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  a{
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+  }
+  
+  
+  .modal-backdrop {
+    /* background-color:var(--color-1); */
+    background-color:var(--color-1);
+    opacity:0.95 !important;
+  }
+  
+  .modal-body{
+    flex: inherit;
+    color: white;
+  }
+  
+  .modal-transparent .modal-content{
+    background: transparent;
+    border: none;
+  }
+   
+  .modal-transparent .close{
+    color: #fff;
+    text-shadow: none;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    outline: none;
+    padding: 0;
+  }
+  
+  .modal-transparent .modal-header, .modal-transparent  .modal-footer{
+    border: none;
+    padding: 0;
+  }
+  
+  .modal-transparent .modal-header h3{
+    color: #F2F2F2;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .modal-transparent .boton{
+    padding: 15px 50px;
+  }
+  
+  /* Cambio de idiomas / paises */
+  
+  .flags-laguages{
+    padding: 30px;
+  }
+    
+  /* Loader */
+  .preloader-area {
+    position: fixed;
+    background: var(--color-2);
+    z-index: 11000;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .preloader-area .loader{
+    width: 90%;
+    width: 300px;
+  }
+  
+  
+  span#error-form{
+    color: red;
+    font-size: 13px;
+  }
+  
+  
+  /* ---------- */
+  
+  
+  /* Portada */
+  section.portada{
+    width: 100%;
+    padding-bottom: 20%;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+  }
+  
+  section.portada::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.20);
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  section.portada:after{
+    background-image: url('../img/img_ondas01.svg');
+    background-color: rgb(0,0,0,0.4);
+    position: absolute;
+    content: '';
+    /* background-size: contain !important; */
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  section.portada .container .row:first-child{
+    height: 100vh;
+  }
+  
+  section.portada .content-portada{
+    width: 70%;
+    z-index: 999;
+    position: relative;
+  }
+  
+  section.portada .content-portada span.fecha{
+    display: table;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    color: #ddd;
+  }
+  
+  section.portada .content-portada span.fecha:before{
+   right: -25%;
+  }
+  
+  section.portada .content-portada span.fecha:after{
+   left: -25%;
+  }
+  
+  section.portada .content-portada span:before, section.portada .content-portada span:after {
+      border-top: 1px solid #fff;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.7em;
+      width: 15%;
+  }
+  
+  section.portada .content-portada h1{
+    width: 100%;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 110px;
+    line-height:110px;
+    margin-bottom:0
+  }
+  
+  section.portada .content-portada h2{
+    width: 100%;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+  }
+  
+  section.portada .box-nombres-fecha-portada .line{
+    height: 1px;
+    width: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  
+  section.portada .box-nombres-fecha-portada img{
+    width: 75px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top:-70px;
+  }
+  
+  
+  .mariposa-3-portada::before,
+  .mariposa-3-portada::after {
+    background-image: url('../img/mariposa_3.svg');
+  }
+  /* End Mariposa 3 Portada */
+  
+  section.portada .box-nombres-fecha-portada h1 span{
+    background-color: var(--color-1);
+    display: inline-block;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    font-size: 50px;
+  }
+  
+  section.portada .box-frase-portada{
+    margin-top: 20px;
+  }
+  
+  section.portada .box-frase-portada p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  section.portada .box-frase-portada p img{
+    width: 30px;
+    margin: 10px 0
+  }
+  
+  section.portada .portada-flor-izq-sup{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 220px;
+    z-index: 1;
+  }
+  
+  section.portada .portada-flor-der-inf {
+      position: absolute;
+      bottom: 260px;
+      right: 0;
+      width: 140px;
+      z-index: 1;
+  }
+  
+  section.portada .portada-flor-izq-inf{
+    position: absolute;
+    bottom:-20%;
+    left: 0;
+    width: 17%;
+    z-index: 999;
+  }
+  
+  section.portada .flecha-continuar{
+    width: 50px;
+    position: absolute;
+    bottom: -15%;
+  }
+  
+  
+  ul.lang-inv{
+    position:absolute;
+    width:100%;
+    top:0;
+  }
+  
+  ul.lang-inv li{
+    margin: 0 5px;
+  }
+  
+  ul.lang-inv li a{
+    color: var(--color-1);
+    background-color:var(--color-3);
+    font-size:14px;
+    font-family: var(--fuente-2);
+    font-weight:400;
+    display: inline-block;
+    line-height:30px;
+    height:30px;
+    width:30px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  ul.lang-inv li a:hover{
+    text-decoration: none;
+    background:var(--color-1);
+    color:#fff
+  }
+  
+  
+  /* ---------- */
+  
+  /* Ceremonia - Fiesta */
+  
+  section.ceremonia-fiesta{
+    background: url('../img/img_ondas02.svg') center 30px no-repeat var(--color-2);
+    background-color: var(--color-2);
+    padding-bottom: 15%;
+    position: relative;
+  }
+  
+  
+  section.ceremonia-fiesta .col-ceremonia, section.ceremonia-fiesta .col-fiesta{
+    z-index: 999;
+  }
+  
+  
+  section.ceremonia-fiesta .col-ceremonia .anim-anillos, section.ceremonia-fiesta .anim-fiesta{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  
+  
+  section.ceremonia-fiesta .col-ceremonia h3, section.ceremonia-fiesta .col-fiesta h3{
+    font-family: 'DM Serif Display', serif;
+    font-size: 50px;
+    color: #fff;
+    background-color: #6d55b2;
+    display: inline-block;
+    position: relative;
+    min-width: 40%;
+    padding: 8px;
+  }
+  
+  
+  section.ceremonia-fiesta .col-ceremonia h3:after, section.ceremonia-fiesta .col-fiesta h3:after{
+    background-image: url(../img/img_cinta02.svg);
+    position: absolute;
+    content: '';
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100%;
+    width: 16px;
+    right: -15px;
+    top:0
+  }
+  
+  section.ceremonia-fiesta .col-ceremonia h3:before, section.ceremonia-fiesta .col-fiesta h3:before{
+    background-image: url(../img/img_cinta01.svg);
+    position: absolute;
+    content: '';
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100%;
+    width: 16px;
+    left: -15px;
+    top:0
+  }
+  
+  section.ceremonia-fiesta .info-col{
+    margin-top: 30px;
+  }
+  
+  section.ceremonia-fiesta .info-col .info-box{
+    margin-bottom: 35px;
+  }
+  
+  section.ceremonia-fiesta .info-col .info-box h6{
+    font-family: 'DM Serif Display', serif;
+    color:white;
+    font-size: 35px;
+  }
+  
+  section.ceremonia-fiesta .info-col .info-box p{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(189, 186, 186);;
+    font-size: 20px;
+  }
+  
+  section.ceremonia-fiesta .info-col .info-box a.boton{
+    margin-top: 5px;
+    display: inline-block;
+    width: 300px;
+  }
+  
+  section.ceremonia-fiesta:after{
+    background-image: url('../img/img_ondas03.svg');
+    position: absolute;
+    content: '';
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  
+  section.ceremonia-fiesta .ceremonia-fiesta-flor-der{
+    position: absolute;
+    bottom:20%;
+    right: 0;
+    width: 10%;
+  }
+  
+  section.ceremonia-fiesta .ondas-2{
+    position: absolute;
+    top: 3%;
+  }
+  
+  section.ceremonia-fiesta .addeventatc .nameBtn{
+    color: white;
+    font-weight: 400;
+  }
+  
+  section.ceremonia-fiesta .addeventatc:hover .nameBtn{
+    color: #fff;
+  }
+  
+  
+  /* ---------- */
+  
+  
+  
+  
+  /* Galeria */
+  
+  section.galeria{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    background-color: black;
+  }
+  
+  section.galeria .anim-galeria{
+    width: 40px;
+    margin: 0 auto;
+  }
+  
+  section.galeria .content-fotos{
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  section.galeria .content-fotos img{
+    width: 100%;
+  }
+  
+  
+  section.galeria .content-fotos .polaroid a{
+    outline: none;
+  }
+  
+  
+  section.galeria .content-fotos .polaroid{
+    background-color: #eee;
+    padding: 15px;
+    padding-bottom: 100px;
+    margin: 5px;
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.40);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.432);
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.40);
+    
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+  }
+  
+  section.galeria .slick-slide:focus{
+    outline: none !important;
+  }
+  
+  section.galeria .slick-center .polaroid{
+    background-color: #fff !important;
+  }
+  
+  .content-fotos .shadow-left{
+    display: none;
+  }
+  
+  .content-fotos .shadow-right{
+    display: none;
+  }
+  
+  .slick-dots{
+    bottom: -40px;
+  }
+  
+  
+  section.galeria .slick-dots li button:before{
+    font-size: 60px !important;
+    color: var(--color-1)  !important;
+    opacity: 0.60;
+  }
+  
+  section.galeria .slick-dots li.slick-active button:before{
+    opacity: 1;
+  }
+    
+  /* Musica de fondo */
+  
+  #player-musica-fondo{
+    position: absolute;
+    left:-99999px;
+  }
+  
+  #controlador-musica{
+    position: fixed;
+    z-index: 999;
+    top: 10px;
+    right: 0;
+  }
+  
+  .music-anim-icon{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+  
+  /* ---------- */
+  /* Firma */
+  
+  footer p{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 1rem;
+  }
+  
+  footer p a{
+    color: #BFA880;
+    
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+  }
+  
+  footer p a:hover{ 
+    text-decoration: none;
+  }
+  
+  
+  
+  /* ---------- */
+  
+  
+  
+  /* Modal Musica */
+  
+  #modalMusica .modal-content{
+    background: transparent;
+    border: none;
+  }
+  
+  #modalMusica .modal-content p{
+    font-size:55px;
+    line-height: 50px;
+    font-family: 'DM Serif Display', serif;
+    color:#fff;
+    display:inline-block;
+    width: 100%;
+  }
+  
+  #modalMusica .modal-content p + span{
+    font-size:22px;
+    font-family: 'Quicksand', sans-serif;
+    color:#fff;
+    font-weight: 300;
+    margin-bottom: 25px;
+    display:inline-block;
+    width: 100%;
+  }
+  
+  #modalMusica .boton{
+    font-size:14px;
+    display: inline-block;
+    background-color: var(--color-4);
+    color: white;
+  }
+  
+  #modalMusica .boton:hover{
+    background-color: var(--color-3);
+    color: #fff;
+  }
+
+  #modalMusica{
+    /*background-image: url('../img/fondo_music.jpg');  Ruta de la imagen de fondo */
+    background-color: #fabfb7;
+    background-position: center; /* Posición de la imagen de fondo */
+    background-size: cover;
+    background-position: center center;
+  }
+
+  #modalMusica .modal-body p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #modalMusica .modal-body .texto{
+    color: black;
+  }
+  
+  /* Modal Como llegar */
+  
+  #modalMapa .modal-dialog{
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  
+  #modalMapa .modal-content{
+    text-align: center;
+    border: none;
+    background: var(--color-2);
+    padding-bottom: 20px;
+  }
+  
+  
+  #modalMapa .modal-header{
+    border: none;
+    display: inline-block;
+    font-family: 'DM Serif Display', serif;
+    padding: 0;
+  }
+  
+  #modalMapa .modal-header .modal-title{
+    font-size: 25px;
+    color: #6d55b2;
+  }
+  
+  #modalMapa .modal-footer{
+    border: none;
+    display: inline-block;
+    padding: 0;
+  }
+  
+  
+  #modalMapa .img-top-modal{
+    position: relative;
+  }
+  
+  #modalMapa .img-top-modal img{
+    width: 45%;
+    margin-top: -18%;
+  }
+  
+  #modalMapa .close{
+    position: absolute;
+    top: -15px;
+    right: 0;
+    color: var(--color-1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    opacity: 1;
+    outline: none;
+    font-size: 34px;
+    font-weight: normal;
+    
+  
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.50);
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.50);
+    
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+  }
+  
+  #modalMapa .close:hover{
+    background-color: var(--color-1);
+    color: #fff;
+  }
+  
+  
+  #modalMapa .close span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #modalMapa .modal-title{
+    padding: 20px 0 10px;
+  }
+  
+  #modalMapa .boton{
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  
+  /* ---------- */
+  
+  
+  
+  /* Modale de mensaje exito */
+  
+  .modal-body.fix-height{
+    height:60%;
+  }
+  
+  .modal-body.fix-height .msj-content{
+    height:100%;
+  }
+  
+  .modal .msj-content{
+    width:100%;
+  }
+  
+  .modal .msj-content h5{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-weight: 700;
+    color:var(--color-1)
+  }
+  
+  .modal .msj-content p{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+  
+  /* ---------- */
+  
+  #googleMap {
+    height: 430px;
+    width: 100%; 
+  }
+  
+  /* Banner para redirigir a la web */
+  .banner-contacto-web{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:auto;
+    background:var(--color-1);
+    z-index: 9999;
+    padding:0;
+    margin: 0;
+  }
+  
+  .banner-contacto-web p{
+    width: 100%;
+    text-align: center;
+    color:#fff;
+    margin: 0;
+    padding:8px 8px;
+    font-family: var(--fuente-2);
+    font-size: 13px;
+  }
+  
+  .banner-contacto-web a{
+    color:#FFF;
+  }
+  
+  .banner-contacto-web a:first-child{
+    background:var(--color-3);
+    color:#fff;
+    border-radius: 10px;
+    padding:3px 10px;
+  }
+  
+  .banner-contacto-web a:first-child:hover{
+    text-decoration:none;
+    color:var(--color-3);
+    background-color:#fff;
+  }
+  
+  
+  /* Mariposas */
+  
+  .mariposa-efect{
+    display: flex;
+    perspective: 500px;
+  }
+  
+  .mariposa-efect::before,
+  .mariposa-efect::after {
+    content: "";
+    padding-top: 45%;
+    flex: 1;
+    background-size: 200% 100%;
+    animation: left 0.5s linear infinite alternate;
+    transform-origin: right;
+  }
+  
+  .mariposa-efect::after {
+    background-position: right;
+    animation-name: right;
+    transform-origin: left;
+  }
+  
+  
+  @keyframes left {
+    from {
+      transform: translateZ(80px) rotateY(-30deg)
+    }
+    to {
+      transform:translateZ(0px) rotateY(50deg) 
+    }
+  }
+  
+  @keyframes right {
+    from { 
+      transform: translateZ(80px) rotateY(30deg)
+    }
+    to {
+      transform:translateZ(0px) rotateY(-50deg) 
+    }
+  }
+  
+  /* End Mariposas */
+   
+  /* Mariposa 1 Portada */
+  .mariposa-1-portada {
+    width: 120px;
+    transform: rotate(-8deg);
+    position: absolute;
+    left: 140px;
+    top: 190px;
+    opacity: 0.8;
+  }
+  
+  .mariposa-1-portada::before,
+  .mariposa-1-portada::after {
+    background-image: url('../img/mariposa_1.svg');
+  }
+  /* End Mariposa 1 Portada */
+    
+  /* Mariposa 2 Portada */
+  .mariposa-2-portada {
+    width: 125px;
+    transform: rotate(125deg);
+    position: absolute;
+    right: 50px;
+    bottom: 490px;
+    opacity: 0.8;
+  }
+  
+  .mariposa-2-portada::before,
+  .mariposa-2-portada::after {
+    background-image: url('../img/mariposa_2.svg');
+  }
+  /* End Mariposa 2 Portada */
+  
+  
+  
+  
+  /* Mariposa 1 Ceremonia-Fiesta */
+  .mariposa-1-ceremonia-fiesta {
+    width: 300px;
+    position: absolute;
+    top:400px;
+    left:-100px;
+    transform: rotate(45deg);
+    opacity:0.6
+  }
+  
+  .mariposa-1-ceremonia-fiesta::before,
+  .mariposa-1-ceremonia-fiesta::after {
+    background-image: url('../img/mariposa_4.svg');
+  }
+  /* End Mariposa 3 Portada */
+  
+  
+  
+  /* Mariposa 1 Regalos */
+  .mariposa-1-regalos {
+    width: 250px;
+    position: absolute;
+    top:200px;
+    left:-50px;
+    transform: rotate(45deg);
+    opacity:0.6
+  }
+  
+  .mariposa-1-regalos::before,
+  .mariposa-1-regalos::after {
+    background-image: url('../img/mariposa_5.svg');
+  }
+  /* End Mariposa 3 Portada */
+
+  .carousel {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    overflow: hidden;
+  }
+  
+.photo-strip {
+  display: flex;
+  gap: 10px; /* Espacio entre las fotos */
+  transition: transform 1s ease; /* Ajusta la duración de la transición a tu gusto */
+  width: fit-content; /* Cambia el ancho para ajustarse al contenido */
+}
+  
+  .photo-strip img {
+    width: 300px; /* Tamaño de cada foto */
+    height: 300px;
+    border: 10px solid white; /* Borde estilo polaroid */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra estilo polaroid */
+  }
+  
+  #prevBtn,
+  #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(0%);
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #prevBtn {
+    left: 10px;
+  }
+  
+  #nextBtn {
+    right: 10px;
+  }
+  
